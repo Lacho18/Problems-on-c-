@@ -1,25 +1,14 @@
 #include <iostream>
 #include <vector>
 
+/*
+    Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and 
+    nums[i] + nums[j] + nums[k] == 0.
+
+    Notice that the solution set must not contain duplicate triplets.
+*/
+
 using namespace std;
-
-bool equalVectiors(vector<int> firstVector, vector<int> secondVector) {
-    int equals = 0;
-
-    for (int i = 0; i < firstVector.size(); i++) {
-        for (int j = 0; j < secondVector.size(); j++) {
-            if (firstVector[i] == secondVector[j]) {
-                equals++;
-                break;
-            }
-        }
-    }
-
-    if (equals == firstVector.size()) {
-        return true;
-    }
-    return false;
-}
 
 vector<vector<int>> threeSum(vector<int>& nums) {
     vector<vector<int>> result;
@@ -30,7 +19,6 @@ vector<vector<int>> threeSum(vector<int>& nums) {
                 if((nums[i] + nums[j] + nums[k]) == 0) {
                     vector<int> newArray = {nums[i], nums[j], nums[k]};
                     if (result.size() != 0) {
-                        bool isEqual = false;
                         int equals = 0;
                         for (int l = 0; l < result.size(); l++) {
                             for (int m = 0; m < result[l].size(); m++) {
@@ -44,7 +32,6 @@ vector<vector<int>> threeSum(vector<int>& nums) {
                             }
                             if (equals != newArray.size()) {
                                 result.push_back(newArray);
-                                isEqual = true;
                                 break;
                             }
                             else {
