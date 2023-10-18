@@ -24,9 +24,6 @@ bool searchMatrix(vector<vector<int>>& matrix, int target) {
         else if (matrix[index][0] <= target && matrix[index][matrix[index].size() - 1] >= target) {
             break;
         }
-        else {
-            index--;
-        }
     }
 
     for (int i = 0; i < matrix[index].size(); i++) {
