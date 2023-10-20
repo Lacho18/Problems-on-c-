@@ -81,7 +81,7 @@ int main()
     sign(&myList, 2);
     sign(&myList, 1);
     printListElements(myList);
-    myList = removeNthFromEnd(myList, 123);
+    myList = removeNthFromEnd(myList, 2);
     std::cout << std::endl;
     printListElements(myList);
 }
