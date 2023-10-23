@@ -11,7 +11,7 @@ struct Tree {
     Tree* left;
     Tree* right;
 };
-
+      
 void prefics(Tree* root) {
     if (root) {
         std::cout << root->value << " ";
