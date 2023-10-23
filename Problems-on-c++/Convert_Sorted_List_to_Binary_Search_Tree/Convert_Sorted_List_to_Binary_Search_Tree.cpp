@@ -5,7 +5,7 @@
     sorted in ascending order, convert it to a height-balanced
     binary search tree.         
 */
-
+       
 struct Tree {
     int value;
     Tree* left;
