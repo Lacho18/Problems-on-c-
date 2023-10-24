@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 /*
     You are given the root of a binary tree containing digits from 0 to 9 only.
