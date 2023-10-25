@@ -1,0 +1,3 @@
+﻿  Single_number.cpp
+C:\Users\user\Desktop\CodeC++\Problems-on-c++\Single_number\Single_number.cpp(23): warning C4715: 'singleNumber': not all control paths return a value
+  Single_number.vcxproj -> C:\Users\user\Desktop\CodeC++\Problems-on-c++\x64\Debug\Single_number.exe
